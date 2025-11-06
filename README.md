@@ -1,10 +1,10 @@
 <div align="center">
 
-<h1> SDMIFusion </h1>
+<h1> TD-IFusion </h1>
 </div>
 <div align="center">
  <em>
-  SDMIFusion: A Deep Learning Framework for Segmentation-Driven Multimodal Image Fusion 
+ TD-IFusion: Task-Driven Visible–Infrared Image Fusion for Enhanced Semantic Segmentation
  </em>
 </div>
 <img src="sdmifusion.png" alt="SDMIFusion Architecture" style="display:block; margin-left:auto; margin-right:auto;">
@@ -12,13 +12,13 @@
  
 ### Overview
 
-SDMIFusion is a task-driven multimodal image fusion framework designed to improve semantic segmentation by effectively combining visible and infrared image modalities. The framework utilizes DeepLabV3+ as the segmentation backbone, and its modular design allows easy adaptation to other high-performance segmentation models depending on the specific application or computational requirements.
+TD-IFusion is a task-driven multimodal image fusion framework designed to improve semantic segmentation by effectively combining visible and infrared image modalities. The framework utilizes DeepLabV3+ as the segmentation backbone, and its modular design allows easy adaptation to other high-performance segmentation models depending on the specific application or computational requirements.
 
 ---
 
 ### Train the Model
 
-To train the SDMIFusion model, run the following command:
+To train the TD-IFusion model, run the following command:
 
 ```bash
 python ./train.py --model_path './Model' --dataset_path './dataset' --batch_size 10 --gpu 0 --num_workers 4 --seg 1 --nclasses 9
@@ -53,4 +53,4 @@ python ./test.py --model_path './Models' --fusion_model_path './fusion_model.pth
 
 ### Acknowledgments
 
-We thank the developers of DeepLabV3+ for providing a powerful and flexible segmentation backbone that forms the foundation of our framework. We also acknowledge the authors of SeaFusion for their pioneering work in task-driven multimodal image fusion, which inspired aspects of our fusion approach. Their contributions have been invaluable to the development of SDMIFusion.
+We thank the developers of DeepLabV3+ for providing a powerful and flexible segmentation backbone that forms the foundation of our framework. We also acknowledge the authors of SeaFusion for their pioneering work in task-driven multimodal image fusion, which inspired aspects of our fusion approach. Their contributions have been invaluable to the development of TD-IFusion.
