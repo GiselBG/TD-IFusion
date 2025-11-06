@@ -45,7 +45,7 @@ The training script supports the following arguments:
 
 The test script performs the multimodal fusion process by combining the infrared and visible images using the trained fusion model. After fusion, it applies the segmentation model to produce the final segmentation results.
 
-To run inference with the trained SDMIFusion model, use the following command:
+To run inference with the trained TD-IFusion model, use the following command:
 
 ```bash
 python ./test.py --model_path './Models' --fusion_model_path './fusion_model.pth' --ir_dir './Infrared' --vi_dir './Visible' --lb_dir './Label' --segmentation_save_dir './SegmentationResults'
